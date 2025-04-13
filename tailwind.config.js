@@ -1,0 +1,21 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",  // Ensure this covers all files
+  ],
+  theme: {
+    extend: {
+      animation: {
+        slide: 'slide 30s linear infinite',
+      },
+      keyframes: {
+        slide: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
